@@ -15,6 +15,9 @@ export const AppRoutes: Routes = [
           {
         path: '',
         loadChildren: './dashboard/dashboard.module#DashboardModule'
+      }, {
+          path: 'locomotives',
+          loadChildren: './locomotives/locomotives.module#LocomotivesModule'
     }, {
         path: 'components',
         loadChildren: './components/components.module#ComponentsModule'

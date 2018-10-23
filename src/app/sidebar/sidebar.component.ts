@@ -27,6 +27,19 @@ export const ROUTES: RouteInfo[] = [{
         type: 'link',
         icontype: 'dashboard'
     },{
+        path: '/locomotives',
+        title: 'Locomotives',
+        type: 'sub',
+        icontype: 'directions_railway',
+        collapse: 'locomotives',
+        children: [
+            {path: 'firmware', title: 'Firmware', ab:'F'},
+            {path: 'map', title: 'Map', ab:'M'}
+        ]
+    }
+
+/*
+    ,{
         path: '/components',
         title: 'Components',
         type: 'sub',
@@ -106,7 +119,7 @@ export const ROUTES: RouteInfo[] = [{
             {path: 'lock', title: 'Lock Screen Page', ab:'LSP'},
             {path: 'user', title: 'User Page', ab:'UP'}
         ]
-    }
+    }*/
 ];
 @Component({
     selector: 'app-sidebar-cmp',
